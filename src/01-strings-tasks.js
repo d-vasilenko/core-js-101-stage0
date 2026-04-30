@@ -161,8 +161,14 @@ function unbracketTag(str) {
  *   'Thunderstruck' => 'THUNDERSTRUCK'
  *  'abcdefghijklmnopqrstuvwxyz' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
  */
-function convertToUpperCase(/* str */) {
-  throw new Error('Not implemented');
+function convertToUpperCase(str) {
+  // throw new Error('Not implemented');
+  return String(
+    str
+      .split()
+      .map((char) => char.toUpperCase())
+      .join()
+  );
 }
 
 /**
